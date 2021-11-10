@@ -6,9 +6,6 @@ public class Cliente {
     private String nome,cpf;
     private Integer telefone;
 
-    public Cliente() {
-    }
-
     public long getId_cliente() {
         return id_cliente;
     }
@@ -43,11 +40,10 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "id_cliente=" + id_cliente +
-                ", nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", telefone=" + telefone +
-                '}';
+        return "Cliente - " +
+                "id: " + id_cliente + '-' +
+                "nome: " + nome + '-' +
+                "cpf: " + cpf + '-' +
+                "telefone: " + telefone + "\n";
     }
 }

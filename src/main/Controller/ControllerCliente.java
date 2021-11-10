@@ -14,11 +14,10 @@ public class ControllerCliente {
         ClienteDao cd = new ClienteDao();
 
         for(int i = 0;i < cliente.size();i++){
-            if(cliente.get(i).getId_cliente() != (cliente.get(i).getId_cliente()+1)){
-                cliente.get(i).setId_cliente(Long.valueOf(i)+1);
-                cd.gravarCliente(cliente.get(i));
-                listClientes.add(cliente.get(i));
-            }
+
+            cd.gravarCliente(cliente.get(i));
+            listClientes.add(cliente.get(i));
+
         }
 
     }
@@ -34,4 +33,5 @@ public class ControllerCliente {
         return listClientes.get(index-1);
 
     }
+
 }

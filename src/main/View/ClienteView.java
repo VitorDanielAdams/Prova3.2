@@ -15,6 +15,9 @@ public class ClienteView {
 
         Cliente cliente = new Cliente();
 
+        System.out.println("Informe o ID do produto");
+        cliente.setId_cliente(entrada.nextLong());
+
         System.out.println("Informe o nome do cliente");
         cliente.setNome(entrada.next());
 
@@ -38,7 +41,7 @@ public class ClienteView {
 
     }
 
-    public long acessarCliente(){
+    public Cliente acessarCliente(){
 
         Scanner entrada = new Scanner(System.in).useDelimiter("\n");
 
@@ -49,6 +52,6 @@ public class ClienteView {
         System.out.println("Cliente selecionado");
         System.out.println(cliente);
 
-        return cliente.getId_cliente();
+        return cliente;
     }
 }

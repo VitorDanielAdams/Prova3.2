@@ -35,7 +35,6 @@ public class Mensagem {
 
     @Override
     public String toString() {
-        return ""+ id_msg +
-                "mensagem='" + mensagem + '\n';
+        return "mensagem:" + mensagem + " - ";
     }
 }

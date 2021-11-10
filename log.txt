@@ -1,1 +1,6 @@
-Cliente vitor Cadastrado com sucesso!
+Cliente test Cadastrado com sucesso! 
+Cliente vitor Cadastrado com sucesso! 
+Cliente rewe Cadastrado com sucesso! 
+Cliente reewrwe Cadastrado com sucesso! 
+Mensagem do Cliente reewrwe: "mensagem test" cadastrada com sucesso! 
+Mensagem do Cliente reewrwe: "nova mensagem" cadastrada com sucesso! 

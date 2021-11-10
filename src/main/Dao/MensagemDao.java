@@ -1,12 +1,16 @@
 package main.Dao;
 
 import main.Model.Cliente;
+import main.Model.Mensagem;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
-public class ClienteDao {
+public class MensagemDao {
 
-    public void gravarCliente(Cliente cliente){
+    public void gravarMsg(Mensagem msg, Cliente id){
 
         try {
             File arquivo = new File("log.txt");
@@ -17,8 +21,8 @@ public class ClienteDao {
 
             FileWriter fileWriter = new FileWriter(arquivo, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
-
-            printWriter.println("Cliente "+ cliente.getNome() +" Cadastrado com sucesso! ");
+            printWriter.println("Mensagem do Cliente " + id.getNome() + ": "+ '"' +msg.getMensagem() + '"'
+                    +" cadastrada com sucesso! ");
 
             printWriter.flush();
             printWriter.close();
