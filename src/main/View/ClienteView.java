@@ -15,7 +15,7 @@ public class ClienteView {
 
         Cliente cliente = new Cliente();
 
-        System.out.println("Informe o ID do produto");
+        System.out.println("Informe o ID do cliente");
         cliente.setId_cliente(entrada.nextLong());
 
         System.out.println("Informe o nome do cliente");
